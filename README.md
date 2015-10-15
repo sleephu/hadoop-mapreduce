@@ -28,4 +28,8 @@ Edit ~/.profile and setup hadoop home path.
   export HADOOP_HOME=/usr/local/bin/hadoop-2.7.1;
   export PATH=$PATH:$HADOOP_HOME/bin;
   ```
-
+If ~/.bash_profile exists, add the following code to ~/.bash_profile so that you don't need to source the file everytime you reopen the terminal:
+ ```
+ source ~/.profile
+ ```
+ Reason: Interactive shell will check ~/.bash_profile, ~/.bash_login and ~/.profile in order.
